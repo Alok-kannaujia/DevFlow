@@ -37,6 +37,10 @@ module.exports = {
           400: "#858EAD",
         },
         "accent-blue": "#1DA1F2",
+        muted: {
+          DEFAULT: "hsl(var(--muted) / <alpha-value>)",
+          foreground: "hsl(var(--muted-foreground) / <alpha-value>)",
+        },
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
@@ -73,5 +77,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
